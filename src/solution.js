@@ -10,6 +10,15 @@ const prepareData = payload => {
       launch.rocket.second_stage.payloads.some(obj => obj.customers.some(customer => customer.includes("NASA")))
     )
   });
+
+  //Transform the objects to get only the desired properties
+  preparedData = preparedData.map(launch => {
+    return {
+      flight_number: launch.flight_number,
+      mission_name: launch.mission_name,
+      payloads_count: launch.rocket.second_stage.payloads.length
+    };
+  });
 };
 
 const renderData = data => {
