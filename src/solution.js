@@ -2,16 +2,7 @@
 import LaunchesAPI from './spaceX_API';
 
 const prepareData = payload => {
-  LaunchesAPI.getPastLaunchesHttpRequest()
-  .then(
-    (result) => {
-      console.log(result.data);
-      debugger;
-    },
-    (error) => {
-      console.log("error: " + error);
-    }
-  );
+  
 };
 
 const renderData = data => {
