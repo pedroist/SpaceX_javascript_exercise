@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_ADDRESS = "https://api.spacexdata.com/v3/launches/past";
+const API_BASE_ADDRESS = "https://api.spacexdata.com/v3";
 
 export default class LaunchesAPI {
   /*---HTTP REQUESTS-------------------------------------*/
