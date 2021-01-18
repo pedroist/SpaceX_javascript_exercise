@@ -1,3 +1,7 @@
 // Please run your solution from this file
+import { renderData, prepareData } from "./solution";
 
-console.log("Hello from %csrc/index.js", "font-weight:bold");
+const data = prepareData();
+
+renderData(data);
+

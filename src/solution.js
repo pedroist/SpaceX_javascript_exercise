@@ -1,8 +1,14 @@
 // Please implement your solution in this file
 
-const noop = () => {};
+const prepareData = payload => {
+  
+};
+
+const renderData = data => {
+
+}
 
 module.exports = {
-  prepareData: noop,
-  renderData: noop
+  prepareData: prepareData,
+  renderData: renderData
 };
