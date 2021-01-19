@@ -39,10 +39,12 @@ const prepareData = payload => {
       payloads_count: launch.rocket.second_stage.payloads.length
     };
   });
+
+  return preparedData;
 };
 
 const renderData = data => {
-
+  document.getElementById("out").innerHTML = JSON.stringify(data, null, 2);
 }
 
 module.exports = {
